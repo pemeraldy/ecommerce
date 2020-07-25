@@ -32,6 +32,26 @@
         </div>
       </div>
     </div>
+    <hr />
+    <div class="row mt-5 py-4">
+      <div class="col-12">
+        <h3 class="text-center mb-3">Other Related Products</h3>
+        <div class="related-products d-flex w-100 justify-content-between">
+          <div class="related-product">
+            <img src="https://via.placeholder.com/150x150" alt />
+          </div>
+          <div class="related-product">
+            <img src="https://via.placeholder.com/150x150" alt />
+          </div>
+          <div class="related-product">
+            <img src="https://via.placeholder.com/150x150" alt />
+          </div>
+          <div class="related-product">
+            <img src="https://via.placeholder.com/150x150" alt />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
