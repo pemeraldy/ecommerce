@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Navbar />
     <div class="row">
       <div class="col-8 m-auto">
         <Jumbotron />
@@ -11,11 +10,9 @@
 
 <script>
 import Jumbotron from "./Jumbotron";
-import Navbar from "./Navbar";
 export default {
   components: {
-    Jumbotron,
-    Navbar
+    Jumbotron
   }
 };
 </script>
