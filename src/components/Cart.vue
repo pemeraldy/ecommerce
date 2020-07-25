@@ -50,13 +50,18 @@
       </div>
       <!-- Billing Details -->
       <div class="col-md-4">
-        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-          <div class="card-header">Billing Details</div>
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+          <div class="card-header">...</div>
           <div class="card-body">
-            <h4 class="card-title">Primary card title</h4>
-            <p
-              class="card-text"
-            >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h4 class="card-title text-center mb-5">Billing Details</h4>
+            <div class="details">
+              <h5 class="text-white">Address Details</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+              <h5 class="text-white">Delivery Method</h5>
+              <input type="checkbox" name="Pickup" id />
+              <input type="checkbox" name="Door" id />
+            </div>
+            <button class="btn btn- btn-lg"></button>
           </div>
         </div>
       </div>
