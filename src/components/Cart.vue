@@ -2,7 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h3>Your Order Breakdown</h3>
+        <h3 class="mb-4">Your Order Breakdown</h3>
+        <hr />
         <div class="d-flex product mb-3">
           <div class="product-img">
             <img src="https://via.placeholder.com/150x150" alt />
@@ -50,10 +51,11 @@
       </div>
       <!-- Billing Details -->
       <div class="col-md-4">
-        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-          <div class="card-header">...</div>
+        <div class="card text-white bg-dark mb-3">
+          <div class="card-header">
+            <h3 class="card-title text-center">Billing Details</h3>
+          </div>
           <div class="card-body">
-            <h4 class="card-title text-center mb-5">Billing Details</h4>
             <div class="details">
               <h5 class="text-white">Address Details</h5>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
