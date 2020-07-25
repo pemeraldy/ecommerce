@@ -60,10 +60,27 @@
               <h5 class="text-white">Address Details</h5>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
               <h5 class="text-white">Delivery Method</h5>
-              <input type="checkbox" name="Pickup" id />
-              <input type="checkbox" name="Door" id />
+              <div class="form-group">
+                <div class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    id="DoorDelivery"
+                    name="customRadio"
+                    class="custom-control-input"
+                    checked
+                  />
+                  <label class="custom-control-label" for="DoorDelivery">Door Delivery</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="pickUp" name="customRadio" class="custom-control-input" />
+                  <label class="custom-control-label" for="pickUp">
+                    Or pickup at the
+                    <i class="fas fa-chair-office"></i>office
+                  </label>
+                </div>
+              </div>
             </div>
-            <button class="btn btn- btn-lg"></button>
+            <button type="button" class="btn btn-primary btn-lg btn-block">Checkout</button>
           </div>
         </div>
       </div>
