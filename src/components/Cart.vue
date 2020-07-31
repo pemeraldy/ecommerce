@@ -33,21 +33,6 @@
             </div>
           </div>
         </div>
-
-        <div class="d-flex product mb-3">
-          <div class="product-img">
-            <img src="https://via.placeholder.com/150x150" alt />
-          </div>
-          <div class="product-details d-flex align-items-center">
-            <div class="product-name">Gucci Watch</div>
-            <div class="product-quantity d-flex">
-              <span class="minus">-</span>
-              <span class="quantity">8</span>
-              <span class="plus">+</span>
-              <div class="sub-total">$2000</div>
-            </div>
-          </div>
-        </div>
         <!-- total subtotal -->
         <div class="row">
           <div class="col-6"></div>
