@@ -1,34 +1,32 @@
 <template>
   <div id="app">
-    <Navbar />
-    <h1 class="text-center display-4 my-4">Success Page</h1>
-    <hr />
-    <SuccessPage />
-    <h1 class="text-center display-4 my-4">Cart Summary & Billing Page</h1>
-    <hr />
-    <Cart />
-    <h1 class="text-center display-4 my-4">Product Details Page</h1>
-    <hr />
-    <ProductDetails />
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import Navbar from "./components/Navbar";
-import SuccessPage from "./components/SuccessPage";
-import Cart from "./components/Cart";
-import ProductDetails from "./components/ProductDetails";
-
-export default {
-  name: "App",
-  components: {
-    SuccessPage,
-    Cart,
-    Navbar,
-    ProductDetails
-  }
-};
-</script>
-
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
