@@ -32,25 +32,34 @@
         <input class="form-control mr-sm-2" type="text" placeholder="Search" />
       </form>
 
-      <div class="btn-group ml-auto" role="group" aria-label="Button group with nested dropdown">
-        <button type="button" class="btn btn-warning">Cart</button>
-        <div class="btn-group show" role="group">
+      <div class="btn-group ml-auto" role="group">
+        <div class="btn-group" role="group">
           <button
-            id="btnGroupDrop1"
+            @click="showCartContent = !showCartContent"
+            id="cartContent"
             type="button"
             class="btn btn-primary dropdown-toggle"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="true"
-          ></button>
-          <div
-            class="dropdown-menu"
-            style="position: absolute; transform: translate3d(0px, 48px, 0px); top: 0px; left: 0px; will-change: transform;"
-            aria-labelledby="btnGroupDrop1"
-            x-placement="bottom-start"
           >
-            <a class="dropdown-item">Item 1</a>
-            <a class="dropdown-item">Item 1</a>
+            <i class="fas fa-cart-plus fa-2x"></i>
+          </button>
+          <div v-if="showCartContent" class="dropdown-menu show" x-placement="bottom-start">
+            <div class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-action flex-column align-items-start bg-dark"
+              >
+                <h5 class="text-warning">Cart Items</h5>
+                <div class="d-flex w-100 justify-content-between">
+                  <p class="mb-1 text-white">
+                    Gucci Leather x
+                    <span class="qnatity">1</span>
+                  </p>
+                  <small class="text-white">
+                    <i class="fas fa-trash"></i>
+                  </small>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -59,8 +68,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      showCartContent: false,
+    };
+  },
+};
 </script>
 
-<style>
+<style scoped>
+.dropdown-menu {
+  position: absolute;
+  transform: translate3d(0px, 48px, 0px);
+  top: 0px;
+  right: 0px;
+  left: auto;
+  will-change: transform;
+  width: 300px;
+  padding: 0;
+}
 </style>
