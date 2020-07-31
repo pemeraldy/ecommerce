@@ -15,20 +15,17 @@
 
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">
-            Home
-            <span class="sr-only">(current)</span>
-          </a>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <router-link class="nav-link" to="/product">Features</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <router-link class="nav-link" to="/checkout">Pricing</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <router-link to="/about" class="nav-link">About</router-link>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -47,13 +44,13 @@
             aria-expanded="true"
           ></button>
           <div
-            class="dropdown-menu show"
-            aria-labelledby="btnGroupDrop1"
+            class="dropdown-menu"
             style="position: absolute; transform: translate3d(0px, 48px, 0px); top: 0px; left: 0px; will-change: transform;"
+            aria-labelledby="btnGroupDrop1"
             x-placement="bottom-start"
           >
-            <a class="dropdown-item" href="#">Item 1</a>
-            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item">Item 1</a>
+            <a class="dropdown-item">Item 1</a>
           </div>
         </div>
       </div>
