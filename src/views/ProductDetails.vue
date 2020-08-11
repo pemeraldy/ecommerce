@@ -28,6 +28,7 @@
         </div>
         <div class="d-flex justify-content-between">
           <button type="button" class="btn btn-primary">Keep shopping</button>
+          <button type="button" class="btn btn-primary">Add to Cart</button>
           <button type="button" class="btn btn-primary">Checkout</button>
         </div>
       </div>
