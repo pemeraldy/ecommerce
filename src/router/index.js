@@ -4,28 +4,30 @@ import Store from '../views/Store.vue'
 import Checkout from '../views/Checkout.vue'
 import Message from '../views/Message.vue'
 import ProductDetails from '../views/ProductDetails.vue'
+// // import ProductCard from '../components/ProductCard'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Store',
+    name: 'store',
     component: Store
   },
   {
     path: '/checkout',
-    name: 'Checkout',
+    name: 'checkout',
     component: Checkout
   },
   {
-    path: '/product',
-    name: 'Product',
+    path: '/product/:id/',
+    name: 'product',
+    props: true,
     component: ProductDetails
   },
   {
     path: '/message',
-    name: 'Message',
+    name: 'message',
     component: Message
   }
 ]
